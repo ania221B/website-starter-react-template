@@ -5,6 +5,6 @@
   gap: $grid-gap;
   grid-template-columns: repeat(
     auto-fit,
-    minax(min($card-base-width, 100%), 1fr)
+    minmax(min($card-base-width, 100%), 1fr)
   );
 }
