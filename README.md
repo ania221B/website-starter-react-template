@@ -4,11 +4,11 @@
 - it uses Vite, React and Sass
 - The Sass files organization is based on [the 7-1 pattern](https://sass-guidelin.es/#the-7-1-pattern)
 
-# How to use
+## How to use
 
 - Once you have the template in your repos, you can use it as a base for your project
 
-## With GitHub
+### With GitHub
 
 1. Go to GitHub
 2. Find the repo with the template
@@ -19,7 +19,7 @@
 7. Click **Create repository from template** button
 8. A new repo based on the template will be created
 
-## With degit
+### With degit
 
 1. Install [degit](https://github.com/Rich-Harris/degit), if you don't have it yet
 
@@ -65,14 +65,56 @@ npm install
 code .
 ```
 
-# Acknowledgements
+## Project Structure
+
+📁 src/
+
+├── assets/                      # Images & fonts
+
+|  ├── images/
+
+|  └── fonts/
+
+├── components/                  # Shared UI and feature components
+
+│  ├── common/                    # Generic, cross-project components (e.g. Button, Breadcrumb)
+
+│  ├── layout/                    # Layout-related components (e.g. Header, Footer)
+
+│  ├── lists/                     # Reusable list-related components
+
+│  ├── sections/                  # Page-specific or grouped content sections
+
+│  └── ui/                        # Small building blocks (e.g. CartItem, ProductCard)
+
+├── sass/                        # SCSS partials and global styles
+
+│ ├── abstracts/                # Variables, mixins, functions
+
+│ ├── base/                      # Reset, general styles
+
+│ ├── components/                # Elements with their own styles, like buttons, inputs, cards, etc.
+
+│ ├── layout/                    # Generic styling creating layouts
+
+│ ├── utilities/                 # Classes that do one specific thing
+
+│ └── vendor/                    # Third party CSS
+
+├── App.jsx                      # Top-level UI component, sets up routes and suspense boundaries
+
+├── index.scss                   # Entry point that imports all styles
+
+└── main.jsx                     # React root
+
+## Acknowledgements
 
 - This template was build as part of [Beyond CSS](https://www.beyondcss.dev/) course by [Kevin Powell](https://www.kevinpowell.co/)
 - You can find Kevin's template on [his GitHub](https://github.com/kevin-powell)
 
 ---
 
-# React + Vite
+## React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
