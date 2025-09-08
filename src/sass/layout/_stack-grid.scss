@@ -2,11 +2,11 @@
 
 .stack-grid {
   --max-width: #{$container-max-width};
-  --padding-inline: #{$container-padding-inline};
+  @include fluid-clamp($container-padding-inline, true, 'padding-inline');
   display: grid;
   grid-template-columns:
     minmax(var(--padding-inline), 1fr) min(
-      100% - ($container-padding-inline * 2),
+      calc(100% - (var(--padding-inline) * 2)),
       var(--max-width)
     )
     minmax(var(--padding-inline), 1fr);
